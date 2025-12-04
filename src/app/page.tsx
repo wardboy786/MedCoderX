@@ -98,6 +98,7 @@ const Page = () => {
                 "Simple, fast, user-friendly interface"
               ]}
               badgeLabel="Get it on Play Store"
+              link="https://play.google.com/store/apps/details?id=com.safeallergy.app"
             />
             <AppCard 
               title="PhotoRights AI"
@@ -111,6 +112,7 @@ const Page = () => {
                 "Easy, reliable, and intuitive design"
               ]}
               badgeLabel="Get it on Play Store"
+              link="https://play.google.com/store/apps/details?id=com.photorights.ai"
             />
           </div>
         </div>

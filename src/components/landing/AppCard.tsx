@@ -1,6 +1,7 @@
 import { CheckCircle2, Smartphone, ArrowRight } from 'lucide-react';
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface AppCardProps {
   title: string;
@@ -9,9 +10,10 @@ interface AppCardProps {
   shadowColor: string;
   features: string[];
   badgeLabel: string;
+  link: string;
 }
 
-export const AppCard: React.FC<AppCardProps> = ({ title, subtitle, icon, shadowColor, features }) => {
+export const AppCard: React.FC<AppCardProps> = ({ title, subtitle, icon, shadowColor, features, link }) => {
   return (
     <div className="group relative bg-white rounded-3xl p-1 shadow-2xl shadow-slate-200/50 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-500 hover:-translate-y-2">
       <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 via-purple-500 to-blue-500 rounded-3xl opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
@@ -44,14 +46,16 @@ export const AppCard: React.FC<AppCardProps> = ({ title, subtitle, icon, shadowC
         </ul>
 
         {/* CTA Button */}
-        <button className="w-full bg-slate-900 text-white p-4 rounded-xl flex items-center justify-center gap-3 hover:bg-slate-800 transition-colors group/btn">
-          <Smartphone size={20} />
-          <div className="text-left leading-tight">
-            <div className="text-[10px] uppercase font-semibold text-slate-400">Get it on</div>
-            <div className="text-sm font-bold">Google Play</div>
-          </div>
-          <ArrowRight size={16} className="ml-auto opacity-0 -translate-x-2 group-hover/btn:opacity-100 group-hover/btn:translate-x-0 transition-all" />
-        </button>
+        <Link href={link} target="_blank" rel="noopener noreferrer" className="w-full mt-auto">
+          <button className="w-full bg-slate-900 text-white p-4 rounded-xl flex items-center justify-center gap-3 hover:bg-slate-800 transition-colors group/btn">
+            <Smartphone size={20} />
+            <div className="text-left leading-tight">
+              <div className="text-[10px] uppercase font-semibold text-slate-400">Get it on</div>
+              <div className="text-sm font-bold">Google Play</div>
+            </div>
+            <ArrowRight size={16} className="ml-auto opacity-0 -translate-x-2 group-hover/btn:opacity-100 group-hover/btn:translate-x-0 transition-all" />
+          </button>
+        </Link>
       </div>
     </div>
   );
