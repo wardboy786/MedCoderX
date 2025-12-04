@@ -1,18 +1,13 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import { 
-  Activity, 
   ChevronRight, 
   Mail,
   Code2, 
-  Twitter, 
-  Github, 
-  Linkedin,
+  Activity, 
 } from 'lucide-react';
 import { Header } from '@/components/landing/Header';
 import { AppCard } from '@/components/landing/AppCard';
-import { SocialLink } from '@/components/landing/SocialLink';
-import { Stats } from '@/components/landing/Stats';
 import Link from 'next/link';
 
 const Page = () => {
@@ -93,7 +88,7 @@ const Page = () => {
             <AppCard 
               title="SafeAllergy"
               subtitle="Allergens Scanner"
-              icon="ShieldCheck"
+              icon="/safeallergy.svg"
               gradient="from-emerald-500 to-teal-500"
               features={[
                 "Scan meals for allergens in seconds",
@@ -106,7 +101,7 @@ const Page = () => {
             <AppCard 
               title="PhotoRights AI"
               subtitle="Copyright Checker"
-              icon="Camera"
+              icon="/photorights.svg"
               gradient="from-blue-600 to-indigo-600"
               features={[
                 "Instantly check image copyright status",
@@ -132,11 +127,6 @@ const Page = () => {
               <p className="text-slate-600 leading-relaxed">
                 My philosophy is simple: <span className="font-semibold text-indigo-600">Coding. Creating. Improving.</span> whether it's ensuring your food is safe to eat or your content is legal to use, I build simple, clean, and useful apps that respect your time and intelligence.
               </p>
-              <div className="flex gap-4 pt-4">
-                <SocialLink icon={<Twitter size={20} />} href="#" />
-                <SocialLink icon={<Github size={20} />} href="#" />
-                <SocialLink icon={<Linkedin size={20} />} href="#" />
-              </div>
             </div>
             <div className="relative w-full md:w-1/3 aspect-square flex items-center justify-center">
                <div className="absolute inset-0 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-2xl rotate-3"></div>
@@ -176,13 +166,6 @@ const Page = () => {
              >
                Write Me
              </a>
-          </div>
-
-          <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-            <Stats number="2+" label="Live Apps" />
-            <Stats number="500+" label="Downloads" />
-            <Stats number="4.8" label="Rating" />
-            <Stats number="24/7" label="Support" />
           </div>
         </div>
       </section>

@@ -1,18 +1,14 @@
-import { CheckCircle2, Smartphone, ArrowRight, ShieldCheck, Camera } from 'lucide-react';
+import { CheckCircle2, Smartphone, ArrowRight } from 'lucide-react';
 import React from 'react';
+import Image from 'next/image';
 
 interface AppCardProps {
   title: string;
   subtitle: string;
-  icon: 'ShieldCheck' | 'Camera';
+  icon: string;
   gradient: string;
   features: string[];
   badgeLabel: string;
-}
-
-const icons = {
-  ShieldCheck: <ShieldCheck size={32} className="text-white" />,
-  Camera: <Camera size={32} className="text-white" />,
 }
 
 export const AppCard: React.FC<AppCardProps> = ({ title, subtitle, icon, gradient, features }) => {
@@ -23,8 +19,8 @@ export const AppCard: React.FC<AppCardProps> = ({ title, subtitle, icon, gradien
       <div className="relative bg-white rounded-[20px] p-8 h-full flex flex-col">
         {/* Header */}
         <div className="flex items-start justify-between mb-8">
-          <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${gradient} flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500`}>
-            {icons[icon]}
+          <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${gradient} flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500 p-3`}>
+            <Image src={icon} alt={`${title} icon`} width={40} height={40} className="w-full h-full" />
           </div>
           <div className="bg-slate-50 px-3 py-1 rounded-full text-xs font-semibold text-slate-500 border border-slate-100 uppercase tracking-wider">
             Available Now

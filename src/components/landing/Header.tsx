@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 
 interface HeaderProps {
   scrolled: boolean;
@@ -19,9 +20,7 @@ export const Header: React.FC<HeaderProps> = ({ scrolled, scrollToSection }) => 
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/80 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('hero')}>
-          <div className="w-8 h-8 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold shadow-lg">
-            M
-          </div>
+          <Image src="/logo.svg" alt="MedCoderX Logo" width={32} height={32} />
           <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-800 to-slate-600">
             MedCoderX
           </span>
