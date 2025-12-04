@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "Abstract tech background for hero section",
+      "imageUrl": "https://images.unsplash.com/photo-1669295384050-a1d4357bd1d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWJzdHJhY3QlMjB0ZWNofGVufDB8fHx8MTc2NDgyOTg4MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract tech"
+    },
+    {
+      "id": "safe-allergy-icon",
+      "description": "App icon for SafeAllergy",
+      "imageUrl": "https://images.unsplash.com/photo-1711715337544-e6c99dbd801a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxoZWFsdGglMjBsb2dvfGVufDB8fHx8MTc2NDc0MzgxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "health logo"
+    },
+    {
+      "id": "photorights-ai-icon",
+      "description": "App icon for PhotoRights AI",
+      "imageUrl": "https://images.unsplash.com/photo-1615451056106-f8160823c2a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjYW1lcmElMjBzaHV0dGVyfGVufDB8fHx8MTc2NDgzODYwMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "camera shutter"
+    },
+    {
+      "id": "about-me-image",
+      "description": "Abstract illustration for about me section",
+      "imageUrl": "https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGRldmVsb3BlcnxlbnwwfHx8fDE3NjQ4Mzg2MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract developer"
+    }
+  ]
 }
