@@ -6,12 +6,12 @@ interface AppCardProps {
   title: string;
   subtitle: string;
   icon: string;
-  gradient: string;
+  shadowColor: string;
   features: string[];
   badgeLabel: string;
 }
 
-export const AppCard: React.FC<AppCardProps> = ({ title, subtitle, icon, gradient, features }) => {
+export const AppCard: React.FC<AppCardProps> = ({ title, subtitle, icon, shadowColor, features }) => {
   return (
     <div className="group relative bg-white rounded-3xl p-1 shadow-2xl shadow-slate-200/50 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-500 hover:-translate-y-2">
       <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 via-purple-500 to-blue-500 rounded-3xl opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
@@ -19,7 +19,7 @@ export const AppCard: React.FC<AppCardProps> = ({ title, subtitle, icon, gradien
       <div className="relative bg-white rounded-[20px] p-8 h-full flex flex-col">
         {/* Header */}
         <div className="flex items-start justify-between mb-8">
-          <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${gradient} flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500 p-3`}>
+          <div className={`w-16 h-16 rounded-2xl bg-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500 p-3 ${shadowColor}`}>
             <Image src={icon} alt={`${title} icon`} width={40} height={40} className="w-full h-full" />
           </div>
           <div className="bg-slate-50 px-3 py-1 rounded-full text-xs font-semibold text-slate-500 border border-slate-100 uppercase tracking-wider">

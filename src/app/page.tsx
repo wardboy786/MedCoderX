@@ -89,7 +89,7 @@ const Page = () => {
               title="SafeAllergy"
               subtitle="Allergens Scanner"
               icon="/safeallergy.svg"
-              gradient="from-emerald-500 to-teal-500"
+              shadowColor="shadow-teal-500/30"
               features={[
                 "Scan meals for allergens in seconds",
                 "Personalized allergen tracking",
@@ -102,7 +102,7 @@ const Page = () => {
               title="PhotoRights AI"
               subtitle="Copyright Checker"
               icon="/photorights.svg"
-              gradient="from-blue-600 to-indigo-600"
+              shadowColor="shadow-indigo-500/30"
               features={[
                 "Instantly check image copyright status",
                 "AI-powered suggestions for safe usage",
